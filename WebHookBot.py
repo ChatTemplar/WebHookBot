@@ -28,7 +28,7 @@ def main():
 
     while True:
         send_message(webhook_url, messages[message_index])
-        message_index = (message_index + (random.randint(1, 5))) % len(messages) #Change the second number from 5 to 1, if u only want first message to be shown
+        message_index = (message_index + (random.randint(1, 5))) % len(messages) #Change the second number from 5 to 1, if u only want first message to be send
         time.sleep(interval)
 
 if __name__ == "__main__":
